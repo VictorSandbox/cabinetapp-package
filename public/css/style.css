@@ -1,0 +1,959 @@
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Helvetica Neue, Helvetica, Open sans, Sans-Serif;
+  /* font-family: Poppins-Regular; */
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  /* background-color: #f4f4f4; */
+}
+
+/* https://www.w3.org/Style/Examples/007/ */
+/* https://www.slazzer.com/upload */
+
+.container {
+  /* percentage to make it responsive */
+  width: 80%;
+  /* move the content to the middle  */
+  margin: auto;
+  overflow: hidden;
+  /* border-radius: 5px; */
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+}
+
+header {
+  /* background: #35454a; */
+  /* white color to contrast with dark background */
+  color: #ffffff;
+  padding-top: 20px;
+  min-height: 70px;
+  border-bottom: #800000 3px solid;
+  padding-bottom: 15px;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 400px;
+  height: 80px;
+}
+
+header nav {
+  background: transparent;
+}
+
+header nav ul {
+  list-style: none;
+  text-align: center;
+  margin-left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #800000;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 0 50px;
+  height: 100%;
+  -webkit-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+/* https://www.key2goal.com/article/vertical-bar-divider-menu-using-css */
+header nav li::after {
+  content: "|";
+  float: right;
+  color: #800000;
+  padding-left: 10px;
+  /* font-size: 20px; */
+  font-weight: bold;
+  padding-right: 8px;
+}
+
+header nav li:last-child::after {
+  display: none;
+}
+
+header nav ul li a:hover {
+  background: #800000;
+  color: #ffffff;
+}
+
+/* Showcase Styling Section */
+#showcase {
+  min-height: 600px;
+  background: url("../img/pexels-curtis-adams-5900800.jpg") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+#showcase h1 {
+  padding: 300px 0;
+  text-align: center;
+  color: #800000;
+  font-size: 40px;
+}
+
+/* service Styling Section */
+#service .box {
+  float: left;
+  width: 40%;
+  padding: 20px 30px 0 0px;
+  color: #800000;
+}
+
+#service .box img {
+  width: 100%;
+}
+
+/* ----------------Footer Styling Section-----------------------*/
+footer {
+  border-top: #800000 3px solid;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: transparent;
+  text-align: center;
+  font-weight: bold;
+  color: #800000;
+  font-size: 20px;
+}
+
+/*  ----------------Gallery Style Page--------------------------*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  height: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+/*-----------------Contact Styling Page ----------------- */
+.contact-form {
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+/* https://www.pedinimiami.com/contact-us/ */
+#contact {
+  min-height: 600px;
+  background: url("../img/contactpage-unsplash.jpg") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+/* ContactPage showcase styling  */
+#contact .bottom {
+  /* position: absolute;
+  top: 500px;
+  left: 531px;
+  color: white; */
+  color: white;
+  margin-top: 20%;
+}
+
+#contact h1 {
+  font-size: 60px;
+  color: white;
+}
+
+#contact p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+label {
+  /* display: block;
+  padding-top: 10px; */
+  margin-right: 5px;
+}
+
+/* ContactPage styling */
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+input[type="text"] {
+  width: 80%; /* Full width */
+  padding: 12px; /* Some padding */
+  margin-bottom: 40px;
+  /* border: 1px solid #ccc; Gray border */
+  border-bottom: 1px solid #b2b2b2;
+  border-radius: 4px; /* Rounded borders */
+  /* margin: 6px; Add a top margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="email"] {
+  width: 80%; /* border: 1px solid #ccc; Gray border */
+  margin-bottom: 40px;
+  border-bottom: 1px solid #b2b2b2;
+  padding: 12px; /* margin: 6px; */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form textarea {
+  width: 85%;
+  height: 100px;
+  /* margin-bottom: 40px; */
+  /* border: 1px solid #ccc; Gray border */
+  border-bottom: 1px solid #b2b2b2;
+  border-radius: 4px;
+}
+
+/* https://medium.com/@w3docs/how-to-create-an-html-button-that-acts-like-a-link-ad94c9448873 */
+.contact-form input[type="submit"] {
+  background-color: #1c87c9;
+  color: white;
+  padding: 12px 30px;
+  margin: 30px 2px;
+  border-radius: 7px;
+  cursor: pointer;
+  min-width: 160px;
+  height: 50px;
+  /* line-height: 1.2; */
+  font-size: 20px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact-form button:hover {
+  background-color: orange;
+}
+
+/* https://flexbox.malven.co/ */
+/* https://flexbox.help/ */
+/* Contact Page Info Sectin Styling */
+.contact-info {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contact-info .box {
+  margin: auto;
+  width: 30%;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-weight: normal;
+}
+
+/* ------------------------About Us Page-------------------------- */
+#about-us .container {
+  position: relative;
+}
+
+.about-showcase {
+  min-height: 600px;
+  background: url("../img/about-background.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.about-showcase p {
+  margin: auto;
+  text-align: center;
+}
+
+.about-message {
+  position: absolute;
+  color: white;
+  text-align: center;
+  padding: 150px;
+  /* top: 160px;
+  left: 120px; */
+}
+
+.about-message h3 {
+  font-size: 30px;
+}
+
+.about-message p {
+  font-size: 20px;
+}
+
+.consultation,
+.design,
+.installation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+}
+
+.consultation .column,
+.design .column,
+.installation .column {
+  position: relative;
+  flex: 33.33%;
+}
+
+.consultation.column h2 {
+  text-align: center;
+}
+
+.about-showcase-button {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 13%;
+  height: 6%;
+  margin: auto;
+  background-color: #1c87c9;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  /* min-width: 200px; */
+  /* height: 55px; */
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+}
+
+.about-process-button {
+  background-color: #1c87c9;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* <a href="https://www.w3docs.com/" class="button">Click Here</a> */
+
+.consultation img,
+.design img,
+.installation img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 90%;
+}
+
+/* -------------  Testimonial Cards ------------------ */
+
+.about-testimonials {
+  background: rgb(237, 239, 240);
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+}
+.about-testimonials .testimonial-card {
+  min-height: 400px;
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.about-testimonials .image1 {
+  background-color: tomato;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: no-repeat center/cover
+    url("../img//testimonials/jassir-jonis-QWa0TIUW638-unsplash.jpg");
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.about-testimonials .image2 {
+  background-color: tomato;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: no-repeat center/cover
+    url("../img//testimonials/alimarel-hpZ6NCRLe1A-unsplash.jpg");
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.about-testimonials .image3 {
+  background-color: tomato;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: no-repeat center/cover
+    url("../img//testimonials/ziphaus-gexSJRjb0qw-unsplash.jpg");
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.about-testimonials .footer {
+  background: linear-gradient(90deg, #1a2b96 0%, #d22b96 100%);
+  height: 140px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+
+.about-testimonials .text {
+  padding: 2.2em;
+  line-height: 1.7em;
+  position: relative;
+  font-size: 18px;
+}
+
+.about-testimonials .quote {
+  font-size: 400%;
+  float: right;
+  opacity: 0.1;
+  transform: rotate(10deg) translate(-10px, -40px);
+  color: #4d3fa3;
+}
+
+.about-testimonials .person {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Utils */
+.box-separator {
+  /* border-top: 10px solid #7b4a4a; */
+  border-bottom: 1px solid #7b4a4a;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-image: linear-gradient(
+      to right,
+      rgba(221, 139, 99, 0.9),
+      rgba(160, 92, 82, 0.6)
+    )
+    1 stretch;
+}
+
+/* class with menu icon */
+.nav-mobile {
+  display: none; /* Hide from browsers that don't support media queries */
+  cursor: pointer;
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  background: #fff url(../img/menu.png) no-repeat center center;
+  height: 25px;
+  width: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+/* class with cancel icon */
+.nav-mobile-close {
+  display: none; /* Hide from browsers that don't support media queries */
+  cursor: pointer;
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  background: #fff url(../img/cancel.png) no-repeat center center;
+  height: 25px;
+  width: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+/* ------------------- Mobile Layout -------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav {
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  header nav ul li a {
+    color: #800000;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0;
+    height: 100%;
+    -webkit-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+
+  header nav li::after {
+    content: "";
+    float: right;
+    color: #800000;
+    padding-left: 10px;
+     font-weight: bold;
+    padding-right: 8px;
+  }
+
+  header img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    padding-bottom: 0;
+  }
+
+  header .container {
+    padding: 0;
+  }
+  /* mobile menu styling */
+  /* https://ultimatecourses.com/blog/creating-a-responsive-dynamic-mobile-navigation-from-pure-javascript */
+
+  /* mobile homepage section */
+  #showcase {
+    min-height: 200px;
+    background: url("../img/pexels-curtis-adams-5900800.jpg") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+  }
+
+  #service .box {
+    float: none;
+    width: 100%;
+    padding: 0;
+    color: #800000;
+    text-align: center;
+  }
+
+  /* mobile about section */
+  .about-showcase {
+    min-height: 400px;
+    background: url(../img/about-background.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+
+  .about-showcase-button {
+    width: 32%;
+    height: 7%;
+    font-size: 18px;
+  }
+
+  .about-message {
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .about-message h3 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .about-message p {
+    font-size: medium;
+    padding: 0%;
+  }
+
+  .about-process p {
+    font-size: medium;
+    padding: 0%;
+    text-align: justify;
+  }
+
+  .about-process h3 {
+    text-align: center;
+  }
+
+  .about-process-button {
+    background-color: #1c87c9;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .consultation,
+  .design,
+  .installation {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 5%;
+  }
+
+  .consultation img,
+  .design img,
+  .installation img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 90%;
+  }
+
+  .column h2 {
+    text-align: center;
+  }
+
+  .about-testimonials {
+    background: rgb(237, 239, 240);
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+  }
+  /* mobile gallery section */
+  #kitchen h1 {
+    text-align: center;
+  }
+
+  #kitchen p {
+    text-align: justify;
+  }
+
+  #countertops h1 {
+    text-align: center;
+  }
+
+  #countertops p {
+    text-align: justify;
+  }
+
+  #bathroom h1 {
+    text-align: center;
+  }
+
+  #bathroom p {
+    text-align: justify;
+  }
+
+  /* mobile contact section */
+  #contact h1 {
+    font-size: 40px;
+  }
+
+  #contact p {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+  }
+
+  .contact-info {
+    width: 100%;
+    display: block;
+  }
+
+  .contact-info .box {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  #contact-form .container {
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .contact-form div {
+    margin: auto;
+    width: 100%;
+    text-align: left;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+} 
+
+
+
+ /* IPad Layout  */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* header and navigation layout */
+  .nav {
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  header nav ul li a {
+    color: #800000;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0;
+    height: 100%;
+    -webkit-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+  header nav li::after {
+    content: "";
+    float: right;
+    color: #800000;
+    padding-left: 10px;
+    /* font-size: 20px; */
+     font-weight: bold;
+    padding-right: 8px;
+  }
+
+  header img {
+    width: 80%;
+    padding: 0;
+    margin: auto;
+  }
+
+  header {
+    padding-bottom: 0;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  /* Showcase section layout - HomePage  */
+  #service .box {
+    float: none;
+    width: 100%;
+    padding: 0;
+    color: #800000;
+  }
+
+  /* About section - IPad */
+  .about-showcase {
+    min-height: 400px;
+    background: url(../img/about-background.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  
+  .about-showcase-button {
+    width: 32%;
+    height: 7%;
+    font-size: 18px;
+  }
+
+  .about-message {
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .about-message h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 50px;
+  }
+
+  .about-message p {
+    font-size: medium;
+    padding: 0%;
+    margin-top: 50px;
+  }
+
+  .about-process p {
+    font-size: medium;
+    padding: 0%;
+    text-align: justify;
+  }
+
+  .about-process h3 {
+    text-align: center;
+  }
+
+  .about-process-button {
+    background-color: #1c87c9;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .consultation,
+  .design,
+  .installation {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 5%;
+  }
+
+  .consultation img,
+  .design img,
+  .installation img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 90%;
+  }
+
+  .column h2 {
+    text-align: center;
+  }
+
+  .about-testimonials {
+    /* background: rgb(237, 239, 240); */
+    background-color: #ffffff !important;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+  }
+
+  .about-testimonials .testimonial-card {
+    min-height: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 15px;
+  }
+
+  /* Gallery styling */
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: none;
+    width: 100%;
+    height: 250px;
+  }
+}

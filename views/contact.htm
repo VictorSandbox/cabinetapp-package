@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f4b0a1f9eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jsScripts.js" defer></script>
+    <title>Contact - Flores Brother Cabinet | Austin, TX</title>
+  </head>
+
+  <!-- http://www.manhattancabinets.com/kitchen.html -->
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding"> 
+          <img src="./img/CabinetLogo.png" alt="company-logo" />
+        </div>
+        <nav class="nav">
+          <div class="nav-mobile"></div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="current" href="/">Home</a>
+            </li>
+            <li class="nav-item"><a href="./about">About Us</a></li>
+            <li class="nav-item"><a href="./gallery">Gallery</a></li>
+            <!-- <li><a href="about.htm">Process</a></li> -->
+            <li class="nav-item"><a href="./contact"> Contact Us </a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <section id="contact">
+      <div class="container">
+        <div class="bottom">
+          <h1>CONTACT US</h1>
+          <p>
+            Get in touch with us to get started on your personalized space nd
+            transform your design dream into a reality
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-form">
+      <div class="container">
+        <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+        <p>Plese fillout the form below th contact us</p>
+
+        <!-- <form method="post">
+          <input type="button" value="Send Email" onclick="sendEmail()" />
+        </form> -->
+
+        <div class="contact-container">
+          <div class="contact-form">
+            <form action="/email" method="POST" >
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter email address"
+                />
+              </div>
+
+              <div>
+                <label for="message">Message</label>
+                <textarea
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Your Comments "
+                ></textarea>
+              </div>
+              <!-- <button type="submit" class="btn" onclick="sendEmail()">
+                Submit
+              </button> -->
+              <input type="Submit" value="Send Email"/>
+
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="box">
+              <span style="color: #800000">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+              </span>
+              <h3>Location</h3>
+              <p>50 Main St. Boston MA</p>
+            </div>
+
+            <div class="box">
+              <span style="color: #800000">
+                <i class="fas fa-phone fa-2x"></i>
+              </span>
+              <h3>Phone Number</h3>
+              <p>(617)555-5555</p>
+            </div>
+
+            <div class="box">
+              <span style="color: #800000">
+                <i class="fas fa-envelope fa-2x"></i>
+              </span>
+              <h3>Email Address</h3>
+              <p>frontdesk@hotelhbt.co</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <!-- https://www.homeboxsecure.com/client  -->
+    <footer>
+      <p>Acme Company, Copyright &copy; 2020</p>
+    </footer>
+
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "brnmcdonnald@gmail.com",
+          Password: "N0rse97?",
+          To: "cairo0075@yahoo.com",
+          From: "brnmcdonnald@gmail.com",
+          Subject: "Sending Email using javascript",
+          Body: "Well that was easy!!",
+        }).then(function (message) {
+          alert("mail sent successfully");
+        });
+      }
+    </script>
+  </body>
+</html>

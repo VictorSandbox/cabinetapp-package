@@ -1,0 +1,50 @@
+/* body {
+  background-color: lightblue;
+} */
+
+div {
+  width: 80%;
+  margin: 3% auto;
+  padding: 60px;
+  border: 2px solid #800000;
+  border-radius: 25px;
+}
+div h2, div p {
+  text-align: center;
+}
+
+.close-button {
+  background-color: #1c87c9;
+  color: white;
+  padding: 12px 30px;
+  margin: 50px 2px;
+  border-radius: 7px;
+  cursor: pointer;
+  min-width: 160px;
+  height: 50px;
+  /* line-height: 1.2; */
+  font-size: 20px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+ div {
+   margin: 3% auto;
+ }
+} 
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  div {
+    margin: 30% auto;
+  }
+
+  div p {
+    margin-top: 60px;
+  }
+}
